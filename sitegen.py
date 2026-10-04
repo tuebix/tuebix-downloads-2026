@@ -44,6 +44,8 @@ for fp in repo.iterdir():
         raise ValueError
     links.append((hr_name, urllib.parse.quote(outfn)))
 
+links.append(("Hands-on: Netzwerke für Anfänger", "https://github.com/f403/net-tutorial"))
+
 env = Environment(autoescape=select_autoescape())
 template = env.from_string(template_str)
 rendered = template.render(links=links)
