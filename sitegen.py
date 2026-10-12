@@ -46,6 +46,8 @@ for fp in repo.iterdir():
 
 links.append(("Hands-on: Netzwerke für Anfänger", "https://github.com/f403/net-tutorial"))
 
+links.append(("Gentoo Linux für omas, was, wie, warum?", "https://oz123.gitlab.io/gentoo-linux-fuer-omas"))
+
 env = Environment(autoescape=select_autoescape())
 template = env.from_string(template_str)
 rendered = template.render(links=links)
